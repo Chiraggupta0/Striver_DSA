@@ -1,6 +1,5 @@
 import java.util.Scanner;
-
-class hash
+class hashing_array
 {
     public static void main(String args[])
     {
@@ -13,7 +12,7 @@ class hash
             arr[i]=sc.nextInt();
         }
 
-        int hash[]=new int[10];
+        int hash[]=new int[15];
         for(int i=0;i<n;i++)
         {
             hash[arr[i]]+=1;
@@ -21,12 +20,13 @@ class hash
 
 
         int q=sc.nextInt();
-        System.out.println("enter the size which you want to test");
-        while(q-- >0)
+        System.out.println("enter the number which you want to test");
+        while(q>0)
         {
             int number =sc.nextInt();
             System.out.println(hash[number]);
+            q--;
         }
-        sc.close();
+        
     }
-} -- 
+} 
