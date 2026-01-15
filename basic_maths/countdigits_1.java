@@ -35,10 +35,11 @@ class Solution {
 }
 class countdigits_1
 {
-    public static void main(String args[])
+    public static int main(String args[])
     {
         Solution obj = new Solution();
         int result=obj.evenlyDivides(2446);
         System.out.println(result);
+        return 0;
     }
 }
